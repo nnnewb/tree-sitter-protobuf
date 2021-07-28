@@ -1,6 +1,25 @@
 {
+  "name": "tree-sitter-protobuf",
+  "version": "0.1.0",
+  "description": "tree-sitter grammar for protocol buffer (proto3)",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build"
+  },
+  "author": "weak_ptr <weak_ptr@outlook.com>",
+  "license": "MIT",
   "dependencies": {
     "nan": "^2.14.2"
   },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.0"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.proto",
+      "file-types": [
+        "proto"
+      ]
+    }
+  ],
   "main": "bindings/node"
 }
