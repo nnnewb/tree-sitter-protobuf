@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "tree-sitter grammar for protocol buffer (proto3)",
   "scripts": {
+    "test": "tree-sitter test",
     "build": "tree-sitter generate && node-gyp build",
-    "build-wasm":"tree-sitter generate && tree-sitter build-wasm"
+    "build-wasm": "tree-sitter generate && tree-sitter build-wasm"
   },
   "author": "weak_ptr <weak_ptr@outlook.com>",
   "license": "MIT",
